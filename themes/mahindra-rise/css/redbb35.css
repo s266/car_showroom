@@ -1,0 +1,22 @@
+.sprite { background: url(../image/sprite.png) no-repeat; display: inline-block;vertical-align: middle;}
+/*background*/
+
+.button2:hover, .button2:focus, .carcontent .vwdtls .gtdtls:hover, .carcontent .vwdtls .vw360:hover,  .has-js .label_check.c_on,input[type="radio"]:checked + label span, .button:hover, .bntsection .getonroad, .button:hover, .nav-item > a:hover, .nav-submenu-item a:hover, #pkcr .item .gtdtls:hover,#pkcr .vwdtls .vw360:hover, .button2 { background-color:#e31837;}
+.bntsection .getonroad:hover, .button2:hover, .button:hover{ background-color:#535353;}
+
+.nav-item.active a, .nav-item:hover a.BigNav,.nav-item:active a.BigNav,.nav-item:active a.BigNav, 
+.button { background:#e31837;}
+/*color*/
+.ftr .left a:hover,#pkcr .carname > a:hover,.contactdetail a, .carmodel .tablebtn a:hover, .carcontent h3 > a:hover, .usedcar .planningtext a:hover, .breadcrumbs a:hover, .Phoneno li a:hover, .selldetail .detaildes td a:hover, .cardmodeldetail .rightpanle .bntsection .btngrounp a:hover, #picture .tabbutton li.tabnavactive, .advance_search_button:hover, #usedcardetail .sliderthum li,
+.aboutus h2, .readmorelink, .Carmodelsec h1, .priceblock h2 a{color: #e31837;}
+
+/*border*/
+.newcarwrap li:hover{border-color: #e31837;}
+
+
+/*Innerpage*/
+.contactbar a, .sitemap .sitemapheading a:hover, .accespage .rwd-table a:hover, .careertable .rwd-table td a:hover, .carmodel .modeltabdetail .complink a:hover{ color:#ec2121}
+input[type="radio"]:checked + label span,.has-js .label_check.c_on{background-color:#ec2121;}
+.has-js .label_check{border-color:#ec2121 !important;}
+
+

@@ -1,0 +1,769 @@
+.innerpage h1::before, .innerpage h2::before, .innerpage h1::after, .innerpage h2::after { display: none; }
+.innerpage h1, .innerpage h2, .innerpage h3, .innerpage h4, .innerpage h5, .innerpage h6 { text-align: left; }
+
+.innerpage {padding: 0 10px 0;}
+#page { padding:59px 0 0px; }
+.main.innerbg > p { font-size: 16px; margin: 20px 0 45px; }
+.pagecnt { font-size: 16px; }
+.pagecnt > p { line-height: 2; padding: 20px 0 0; }
+.pagecnt h3 { margin: 0 0 -2px; }
+
+/*bread crumbs css*/
+.breadcrumbs { font-size: 12px; line-height: 37px; background: #7F7F7F; font-family: arial;  }
+.breadcrumbs .main{ position: relative; }
+.breadcrumbs a { color:#ffffff; }
+.breadcrumbs span { color: #c8c8c8; }
+.breadcrumbs i{background-position: -546px -142px; height: 7px; margin: 0 5px; width: 4px;}
+/*FAQ page*/
+.frequent_questions{ font-family: arial; }
+.faq ul { padding: 0 20px; }
+#frequentQA { margin-top: 24px; }
+#frequentQA li { padding: 0 0 30px; }
+#frequentQA li:last-child { border-bottom: none; }
+.faq .questions::before { content: "Q."; position: absolute; text-indent: -23px; }
+.faq .questions { font-size: 16px; }
+.faq p { padding: 5px 0 0; line-height: 2; }
+.faq .answers::before { content: "A."; position: absolute; text-indent: -23px; font-size: 16px;}
+.faq .answers { font-size: 14px; }
+/*testimonialspage page*/
+.testimonialwrap div:first-child { padding-top: 0; }
+.thmbnail { border: 1px solid #ccc; border-radius: 7px 0 0; display: inline-block; float: left; height: 120px; margin-right: 10px; overflow: hidden; vertical-align: top; width: 110px; }
+.thmbnail > img { max-width: none; width: 110%; }
+.testimonialspage .testi1, .testimonialspage .testi2 { padding: 0 10px 40px;    width: 100%; }
+.testimonialspage .testi2, .testimonialspage .testi1 { clear: both; display: inline-block; }
+.testimonialspage p { line-height: 2; }
+.testimonialspage p.clientname span { display: block; }
+.testimonialspage p.clientname .clnm{color: #e31837; font-weight: bold;}
+.testimonialspage p.clientname { display: inline-block; margin: -8px 0 0; vertical-align: top; }
+.testimonialspage .city, .testimonialspage .designtion { color: #828282; display: inline-block !important; font-size: 12px; line-height: 1.5; }
+.testimonialspage .designtion:after { content: ","; margin: 0 5px; }
+.testimonialspage .testpg { max-height: none; overflow: hidden; }
+/*Error page*/
+.error { padding-bottom: 250px; }
+#page.error .innermid { padding: 60px 20px 90px; text-align: center; }
+#page.error .leftarea { vertical-align: top; display: inline-block; margin: 0 auto; text-align: left; }
+#page.error .look { font-size: 20px; line-height: 1; padding: 20px 0 0; }
+#page.error .codeerror { font-size: 16px; padding: 20px 0 0; }
+#page.error .helpful { font-size: 14px; padding: 20px 0 0; }
+#page.error li { display: inline-block; margin: 0 20px 0 0; }
+#page.error li a { font-size: 16px; padding: 20px 0 0; }
+#page.error li a:hover { color: #999 !important; }
+#page.error .rightarea { display: inline-block; }
+/*----contact Page------*/
+.contact form { margin: 0px auto; width: 290px; }
+.contact .contactdetail { display: inline-block; width: 100%; margin-top: 30px auto; text-align: center }
+.contact .contactdetail .fields {margin: 0 0 35px;display: inline-block; position: relative; width: 100%; }
+.contactdetail .fields2 textarea { height: 130px; padding-top: 10px; resize: none; transition: all 0.4s ease-in-out 0s; box-sizing: border-box; width: 100%; }
+.contactdetail .fields4 button { margin: 20px 0 0; width: 250px; }
+.contactdetail p { font-size: 14px; }
+.contactdetail .insubtngap { margin: 0 0 20px; }
+.contactdetail a:hover{color:#575757;}
+/*Offer Page*/
+.validoffer{font-size: 13px;height: 50px;line-height: 50px;text-align: center;}
+/* ========== Popup Css ========== */
+.popupbg { background:rgba(0,0,0,0.75); position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 9999; display: none; }
+.popupwrap { position: fixed; width: 90%; z-index: 10000; top: 30px; left: 50%; margin-left: -45%; background-color: #fff; -webkit-box-shadow: 0 0 3px rgba(0,0,0,.3); -moz-box-shadow: 0 0 3px rgba(0,0,0,.3); box-shadow: 0 0 3px rgba(0,0,0,.3); overflow: hidden; display: none; }
+.popupwrap .popuptitle { width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; font-size: 20px; color: #e31837;font-weight: bold; padding: 10px 35px; text-align: left; line-height: 1.2;
+	 margin-bottom: 20px; }
+.popupwrap .popupcontain { width: 100%; float: left;max-height: 470px; overflow: auto;}
+.popupwrap .formerror { color: #f00; float: left; font-size: 12px; height: 37px; padding-top: 5px; visibility: hidden; }
+.popupwrap .formerror.visiable { visibility: visible; }
+.popupwrap .popupinner { padding: 25px 15px 0;  font-family: "Open Sans", Helvetica, Arial, sans-serif}
+.popupwrap .inputvalue { width: 100%; float: left; margin: 0 0px 35px 0; text-align: left; position: relative; }
+.popupwrap .popupbutton button { margin-bottom: 10px;}
+.popupwrap .lookingfor { color: #6e6e6e; font-size: 12px; line-height: 1; padding-bottom: 7px; text-align: left; }
+.popupwrap .popupbutton { margin: 0 auto 0; text-align: center; max-width: 80%; }
+.inputvalue p { font-size: 14px; padding: 0px 0 1px 1px; color: #696969; text-align: left; margin-top: -6px; }
+.popupwrap .roadpriceradio .lookingfor { float: left; width: 170px; }
+.popupwrap .roadpriceradio form { float: left; position: relative; top: -6px; }
+.popupwrap .roadpriceradio label { margin: 0 5px; }
+.popupwrap .close {position: absolute; right: 14px;top: 14px;font-size: 20px; color: #535353;}
+.popupwrap .close:hover{ text-decoration: none; }
+.inputvalue input[type="radio"] + label span { border: solid 1px; }
+.popupwrap .titlepopup { font-size: 19px; color: #303030; line-height: 1.2; margin-bottom: 12px; display: inline-block; width: 100%; }
+.popupwrap .leftcolumn { color: #2f2f2f; font-size: 12px; line-height: 15px; max-width: 270px; padding: 0 0 0 10px; width: 40%; display: inline-block; box-sizing: border-box; }
+.popupwrap .rightcolumn { color: #17232d; font-family:arial; font-size: 15px; line-height: 1; max-width: 290px; width: 50%; display: inline-block; margin-left: 5px; box-sizing: border-box; }
+.popupwrap .pricerowfinal .rightcolumn, .popupwrap .pricerowfinal .rightcolumn .rupee { font-size: 18px; }
+.popupwrap .pricerow, .popupwrap .pricerowfinal { margin: 0 auto; max-width: 560px; width: 100%; padding-top: 15px; padding-bottom:15px; }
+.popupwrap .pricerow { border: solid 1px #e3e3e3; border-bottom: none; }
+.popupwrap .pricerowfinal { border: solid 1px #e3e3e3;}
+.popupwrap .pricerowfinal .leftcolumn { color: #17232d; }
+.popupwrap .pricerowfinal .rightcolumn{color: #17232d; font-family:arial;}
+.popupwrap .mandatory { font-size: 14px; line-height: 1.5; padding: 31px 0 0; color: #2f2f2f; }
+.popupwrap .selldetail .titlepopup { margin-bottom: 33px; }
+.popupwrap .pleasecon { font-size: 16px; margin-bottom: 20px; }
+.popupwrap .detaildes { border: none; color: #4c4c4c; float: none; font-size: 12px; margin: 0; padding: 0; width: auto; }
+.popupwrap .name { color: #2f2f2f !important; width: 114px; }
+.popupwrap .dotter { width: 13px; }
+.popupwrap .gap { height: 10px; }
+.buttonwrap { width: 100%;}
+.popupwrap .manda { color: #2f2f2f; font-size: 12px; text-align: center; padding: 0 0 10px 0; }
+.withimgpopup .popupleftImg{ display: none; }
+
+.popupwrap .lebeltitle { font-size: 14px; }
+.radiobox label { margin-right: 20px; font-size: 14px; color: #2f2f2f; cursor: pointer; margin-top: 7px; font-weight: normal; }
+.radiobox label span { margin-right: 5px; }
+.selldetail .popupinner, .onroadprice .popupinner { padding-bottom: 37px;  max-height: 450px;overflow: auto; }
+.popupwrap .marbottom { margin-bottom: 10px !important; }
+.popbooktestdrive .inputvalue p { margin-top: 8px; }
+.popupwrap .rightcolumn .rupee { font-size: 18px; margin: 0; color: #171c21; }
+/* ========== Popup Offer ==========*/
+.offerpopup .saveupto { font-size: 20px; color: #2f2f2f; line-height: 1.2; margin-bottom: 40px; text-align: center; }
+.offerpopup .saveupto .saveup, .offerpopup .saveupto .saveuprup { }
+.offerpopup .offerimg { float: left; width: 100%; height: 163px;  text-align: center;  }
+.offerpopup .description { font-size: 16px; width: 250px; margin: 0px auto; }
+.offerpopup .description .element { color: #2f2f2f; width: 170px; float: left; line-height: 1.7; margin-bottom:8px;}
+.offerpopup .description .elemvalue { float: left; line-height: 1.7; color: rgba(23, ​ 35, ​ 45, ​ 0.8); font-family:arial; color:#2f2f2f}
+.offerpopup p { font-size: 14px; color: #373636; text-align: center; padding: 30px 0 10px 0 }
+.inputvalue .help-block { bottom: -20px; }
+.offerpopup .saveupto .rupee { font-size: 20px; margin: 0; }
+.description .rupee { font-size: 16px; margin: 0; }
+.saveuprup sup { vertical-align: top; margin-top: 5px; }
+/*Thank You Popup*/
+.thankyou { padding-bottom: 30px; }
+.thankmsg { font-size: 14px; color: #2f2f2f; line-height: 22px; }
+.thankyou .titlepargh { font-size: 18px; line-height: 24px; }
+.thankyou p { padding-bottom: 20px; }
+.thankyou p span { font-size: 16px; color:#2f2f2f}
+.thankyou .padbnone { padding-bottom: 0px; }
+.thankmsg a:hover { text-decoration: underline; }
+/*Popup-On Road Price*/
+.onroadprice .titlepopup { margin-bottom: 20px; }
+/*Popup-sell detail*/
+.selldetail .detaildes td { color: #2f2f2f; font-size: 14px; }
+.selldetail .detaildes td a{color:#2f2f2f;}
+/*Popup- Book a TEst Drive*/
+.popbooktestdrive .inputvalue p { margin-top: 0; }
+/*Popup Contact No*/
+.Phoneno ul { margin: 0 auto 30px; width: 150px; }
+.Phoneno li.title { color: #2f2f2f; font-size: 18px; margin-bottom: 15px; padding: 0; }
+.Phoneno li { text-align: center; margin-bottom: 9px; }
+.Phoneno li a { font-size: 16px; color: #2f2f2f;}
+/* Popup */
+.popwrp { width: 100%;  }
+.popwrp li { width: 100%; margin: 20px auto; }
+.innerpage { padding-bottom: 70px;background: #F6F6F6; }
+#page.popbgcolor { background-color: #FFF; }
+
+/*Popup OTP */
+.otptitle{color: #454140;font-size: 17px;padding:0 0 20px;text-align: center;  position: relative; margin-bottom: 30px;line-height: 1.3;}
+.otppopup .inputvalue{ margin: 0px auto !important; float: none;   width: 100% !important;}
+.otppopup .inputvalue input{ width: 100% !important;  }
+.otppopup .getme{color: #454140; font-size: 14px; margin-bottom: 5px;}
+.otptitle:after {border-top: 2px solid #ccc;bottom: 0;content: "";left: 0;margin: 0 auto;position: absolute;right: 0;width: 170px;}
+.otppopup .dintreceive{ margin-top: 20px; font-size: 13px; text-align: center;}
+.otppopup .dintreceive a{ color:#e31837; }
+.otppopup .dintreceive a:hover{ color: #000; }
+.otppopup .wrongno { margin-bottom: 30px;}
+.otppopup .fields { width: 100%;}
+
+#custom-form .help-block { position: absolute; }
+#custom-form .labelcheck { float: left;margin: 0;    top: 3px;margin-right: 10px; }
+#custom-form .insubtngap { margin-top: 20px; }
+#custom-form .chkhold label{ float: left; }
+#custom-form .agree{ position: relative; }
+#custom-form .agree .checkerrdif{color: red;width: 100%;clear: both;position: absolute;font-size: 11px;bottom: -12px;left: 0;}
+
+
+
+/*Insurance*/
+.insurancedetail h2 { text-align: left; font-size: 20px; }
+/*.selectsec, .oldpolicy, .textsec { margin: 20px 0 0; }*/
+/*Sell Car Page*/
+#sell_car form.sell_your_car { margin: 23px 0 0; }
+#sell_car h2, .bookservicemain h2, #accdetail h2, .evntgallery h2, .submitresume h2, .carfinence h2 { font-size: 24px; margin-bottom: 28px; width:100%; line-height:1.2}
+.evntgallery h2{ margin-bottom:10px}
+#sell_car .sell_input { position: relative; margin-bottom:30px; width:100%}
+#sell_car .sell_input p { display: inline-block; float: right; font-size: 12px; padding:6px 0px 0px 0px; position: relative; text-align: left; top: 0; width: 100%; }
+
+#sell_car .installed_features .sell_input {text-align: left; position: relative;display: inline-block; }
+
+#sell_car .left_select {width: 100%; display: inline-block; padding: 0 5px 0 0; }
+#sell_car .sell_table { display: table; margin-top: 11px; width: 100%; min-width: 350px; }
+#sell_car .right_select .sell_table {margin-top: 0px;}
+#sell_car .sell_table label { line-height: 0; color: transparent; left: 50%; position: absolute; margin-left:-8px; width:16px;}
+#sell_car .sell_table .sell_head span, .sell_table .sell_row span {font-family: "Open Sans", Helvetica, Arial, sans-serif !important; 
+	border-bottom: 1px solid #e2e2e2; display: table-cell; font-size: 14px; padding: 12px 10px 11px 10px; text-align: center; width: 16.25%; 
+	position: relative; }
+#sell_car .sell_table .sell_head span:first-child, .sell_row span:first-child {text-align: left; width: 35%; font-weight: bold; }
+#sell_car .sell_table .sell_head { display: table-header-group; }
+#sell_car .sell_table .sell_row { display: table-row; }
+#sell_car .sell_table .sell_head span {font-weight: bold;}
+/*#sell_car .sell_table .sell_head span:first-child { border-top: none; }
+.sell_table .sell_row:last-child span { border-bottom: 1px solid #e2e2e2; border-radius: 0 0 3px 3px; }
+.sell_table .sell_row:last-child span:first-child { border-bottom: none; }*/
+#sell_car .car_condition {overflow-x: auto; width: 100%;}
+#sell_car .right_select { display: inline-block; width: 100%; padding: 0 5px 0 0; }
+#sell_car .additional_features { margin-top: 35px; }
+#sell_car .additional_features > label { display: inline-block; margin: 0 20px 28px 0; width: 100%; float: none; }
+#sell_car textarea {margin-top: 3px;}
+#sell_car .contact_details { display: inline-block; width: 100%;}
+#sell_car .car_details{ display: inline-block; width: 100%; }
+#sell_car .select-button { margin: 0 auto 50px; }
+#sell_car .radioboxspace span {margin: 0px 0px 0px 3px;}
+#sell_car .radioboxspace { vertical-align: top; margin-top: 7px!important; display: inline-block; text-align: center }
+#sell_car .radioboxspace .radioname { /*width: 110px;*/ }
+#sell_car .radioboxspace label {line-height: 18px; color: #000; position: inherit; top: 0px;left:5px; margin-left: 5px;}
+.carcondition label, .sell_row label { float:none !important;}
+#sell_car .page .newcar li:hover, .page .searchused a.button:hover, .page .searchused a.button { border: 1px solid; }
+#sell_car .select-button { font-size: 14px; line-height: 40px !important; margin: 4px auto; background-color: #000; padding: 0 20px; vertical-align: top; width: 260px; }
+#sell_car .fields3 { float: left; width: 275px; margin: 0 20px 35px 0; }
+#sell_car input[type="radio"]:checked + label span { box-shadow: 0 0 0 3px #fff inset; -ms-box-shadow: 0 0 0 3px #fff inset; -webkit-box-shadow: 0 0 0 3px #fff inset; -moz-box-shadow: 0 0 0 3px #fff inset;}
+#sell_car input[type="radio"] + label span, #sell_car input[type="radio"] + label span { border: 1px solid #000 !important; }
+#sell_car .pagecard {margin-bottom: 40px;padding: 20px 20px 5px 20px;}
+#sell_car .headtitle h1 {text-align: center; text-transform: uppercase; font-weight: bold;}
+#sell_car h2 {color: #e31837; text-transform: uppercase;}
+#sell_car .row {display: inline-block;width: 100%;}
+#sell_car .col6{width:100%; float: left;}
+#sell_car .floatRight {float: right;}
+#sell_car .help-block {position: inherit;}
+
+/*-------Online Services ---------*/
+#online .purpose, #online .personal, #online .contact { width: 100%; padding-bottom: 4px; }
+#online .contact { margin-top: 0; }
+#online .terms { width: 100%; float: left; padding-bottom: 4px; }
+#online .agree { padding: 10px 0 8px; margin-bottom:20px}
+#online .purpose .heading, #online .personal .heading, #online .contact .heading, #online .terms .heading { font-size:24px; font-weight: normal; line-height: 28px; margin-bottom: 30px; text-transform: none; color: #575757; }
+
+#online .payment_input { margin: 0 20px 27px 0 !important; }
+#online .online_radio { display: inline-block; width: 98%; margin-bottom: 20px; position: relative; }
+#online .online_input input {display: block;  padding: 0 0 0 11px; width: 100%; }
+#online .online_input p { display: inline-block; float: right; font-size: 14px; padding: 0; position: relative; text-align: left; top: 0; width: 100%; }
+#online input[type="radio"] { display: none; margin-left: 10px; padding: 0; position: relative; top: 2px; }
+.online_radio.mode_input span { margin-right: 10px; top: -1px; }
+.online_radio label { display: inline-block; float: left; margin:0 20px 0 0; font-size: 14px; cursor: pointer; }
+#online .select-button { margin: 20px 0 50px; padding: 4px 20px; }
+#online .online_radio textarea { width: 94%; }
+#online .online_input textarea { height: 126px;  resize: none; float: left; width: 100%; }
+#online .other {float: left;font-size: 12px;height: 30px;line-height: 28px;margin: 17px 0 0 10px;width: 160px;}
+#online .agree label { float: none; position: relative;  top: 5px; width: auto; padding-left: 5px; }
+.online_radio.mode_input label[for="others"] { clear: both; margin: 20px 0 0px 0 !important; }
+#online .online_area { border: 1px solid #d6d6d6; max-height: 110px; overflow-y: auto; padding: 7px 13px; border-radius: 3px; width: 98%; }
+#online .online_area .head { font-size: 12px; line-height: 20px; font-weight: bold; color: #2f2f2f; }
+#online .terms p { font-size: 12px; line-height: 20px; }
+#online .online_radio .remark { height: 172px; width: 100%; box-sizing: border-box;  }
+#online .help-block { bottom: -15px; left: 0; position: absolute; }
+.marginright{ margin-right:0 !important}
+
+/*Compare page*/
+.compare { margin-top: 50px; }
+.panaldata table { width: 100% }
+.compare-three { width: 745px; float: right; }
+.compare-three .col-1 { width: 32%; background-color: #fff; border: 1px solid #e1e1e1; float: left; padding: 30px 20px 20px; position: relative; margin-left: 9px; min-height: 292px; }
+.comwrap .combox { width: 100%; }
+.comwrap { width: 100%; }
+.comwrap .comparehead { width: 100%; margin-bottom: 20px; }
+.comwrap .comparehead .compareleft { width: 500px; float: left; }
+.comwrap .comparehead .compareright { width: 500px; float: right; font-size: 12px; color: #6c6c6c; text-align: right; font-style: italic; }
+.comwrap .combox .comcol { float: left; margin-left: 9px; min-height: 292px; padding: 30px 20px 20px; position: relative; width: 22%; }
+.diffradiobox .filter .filterinn { margin-right: 5px; width: 70px !important; text-transform: uppercase; }
+.compare-two { width: 750px; float: right; }
+.compare-two .col-1 { width: 42%; background-color: #fff; -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.21); -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.21); box-shadow: 2px 3px 5px rgba(0,0,0,.21); border: solid 1px #a8a8a8; float: left; padding: 10px 3% 22px; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; position: relative; margin-left: 10px; min-height: 280px; }
+.comwrap .compare-four .getonroadp button { width: 100%; padding: 13px 0; font-size: 12px; color: #fff; letter-spacing: 0px; font-weight: bold; text-transform: uppercase; font-family: Arial, Helvetica; }
+.comwrap .compic { width: 100%; text-align: center; padding-bottom: 10px; }
+.comwrap .compic a { display: inline-block; }
+.comwrap .comhead { font-size: 20px;  padding-bottom: 20px; line-height: 1; text-align: center; }
+.comwrap .comhead a { color: #2f2f2f; text-decoration: none;  }
+.comwrap .compareselect { height: 40px; margin: 15px auto 5px; text-align: center; width: 200px; }
+.compare-one { width: 750px; float: right; }
+.compcontent li { width: 100%; float: left; font-size: 14px; color: #2f2f2f; padding: 0 0; background: #fff; border-bottom: 1px solid #d9d9d9;  }
+.compcontent li:nth-of-type(2n) { background: #fff; }
+.compcontent li .compareleft { width: 26%; float: left; padding: 13px 0 13px 10px; text-align: left;  }
+.compcontent li .compareright { width: 73%; float: left; padding: 13px 0 13px 0; background: #fff; }
+.compcontent li .compareright div { padding: 0 0 0 20px; line-height: normal; float: left; width: 235px; }
+.compcontent li .compareright.comparewrap-four div { width: 155px; }
+.compcontent li .compareright.comparewrap-two div { width: 342px; }
+.crcle { width: 14px; height: 14px; border-radius: 50px; -moz-border-radius: 3px; -ms-border-radius: 3px; border-radius: 3px; -o-border-radius: 3px; -webkit-border-radius: 3px; margin: 0 6px 6px 0; display: inline-block; }
+.white { background: #fbfbfd; border: 2px solid #e6e6e6; }
+.Mercury { background: #e1e1e1; border: 2px solid #e1e1e1; }
+.MineShaft { background: #2f2f2f; border: 2px solid #2f2f2f; }
+.MilanoRed { background: #b1160c; border: 2px solid #b1160c; }
+.Atoll { background: #0A5D6B; border: 2px solid #0A5D6B; }
+.WildBlueYonder { background: #788cb2; border: 2px solid #788cb2; }
+.Hemlock { background: #625B41; border: 2px solid #625B41; }
+.Dorado { background: #665956; border: 2px solid #665956; }
+.twocars li { float: left; width: 50%; }
+.comparereviews { overflow: hidden; border-bottom: solid 1px #d8d8d8; }
+.comparereviews.last { border: none; }
+.compareone { width: 470px; float: left; font-family: Arial, Helvetica, sans-serif; line-height: 17px; padding: 14px 14px 1000px; border-right: solid 1px #d8d8d8; margin: 0 0 -1000px; }
+.four .compareone { width: 221px; }
+.three .compareone { width: 303px; }
+.compareone.last { border: none; }
+.compareone p { color: #767676; font-size: 12px; padding: 0 0 10px; }
+.heading { font-size: 14px; text-transform: uppercase; }
+.imgholder { float: left; margin: 5px 0 0; }
+.imgholder img { display: block; width: 100%; height: auto; }
+.subheading { font-size: 12px; text-transform: uppercase; line-height: 17px; font-weight: bold; padding: 5px 0 0; }
+.comparewrap h3 { background:#dddddd ; display: block; width: 100%; margin-top: 10px !important; line-height: 25px; float: left; border: solid 1px #e0e0e0; box-sizing: border-box; padding:14px 0; }
+.comparewrap h3.open{ padding:.6em 0;}
+.comparewrap h3.margintop0 { margin-top: -1px; }
+.comparewrap h3 a { color: #2f2f2f; text-decoration: none; font-weight: normal; font-size: 16px;  padding: 14px 0 10px 10px; }
+.comparewrap h3 a .spleft { float: left; width: 95%; padding-left: 15px; text-align: left; }
+.comparewrap h3 a .sprite { width: 12px; height: 9px; float: right; margin-right: 15px; background-position: 0px 1px;  }
+.comparewrap .compcontent { float: left !important; margin: -1px 0 0; padding: 0 !important; position: relative; width: 100% !important; min-height: auto !important; max-width: auto !important; }
+.adddropdown span.holder { background: none; height: auto; width: 200px; margin-right: 0; font-size: 12px; color: #7f7f7f; margin: 0 0 0 10px; }
+.adborder { border: 1px solid #d6d6d6 !important; margin-bottom: 3px; margin-top: 5px; min-width: 1000px; }
+.adborder .admainbox { background: #fff; border-radius: 3px; padding: 8px 8px 8px 15px; width: 972px; }
+.largeadblock p { color: #8c8c8c; font-size: 10px; margin: 0; padding-bottom: 3px; text-align: right; }
+.comwrap .combotarrow { background-position: -87px -54px; bottom: -13px; height: 13px; left: 32px; position: absolute; width: 25px; }
+.fourcarcompare .cell { width: 141px; }
+.comparewrap .adborder { margin-bottom: 5px; }
+.compcontent li.offerdiscount { background: #fffde9; }
+.compcontent li.offerdiscount span { color: #d2201e; font-size: 14px; font-weight: bold; margin: 0 5px 0 0; }
+.compcontent li .compareright div a { color: #464646; font-size: 14px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: underline; margin: 0 0 0 5px; }
+.compare-desktopview { display: none; }
+.compare-mobview { display: inline-block; width: 100%; }
+.commobwrap .comtitle { width: 100%; background: #f7f7f7; padding: 10px 0 10px 10px; }
+.commobwrap .comtitle h1 { font-size: 14px !important; text-transform: capitalize !important; color: #2f2f2f !important; padding-top: 0 !important; padding-bottom: 0; text-align: left; }
+.commobwrap .comcarimg { float: left; width: 100%; margin: 8px 0 3px 0; text-align: center; }
+.W2P { width: 2%; }
+.W47P { width: 47%; }
+.Hand { cursor: pointer; }
+.W45P { width: 45%; }
+.comcarname { width: 100%; padding-top: 5px; text-align: center; float: left; margin-top: 8px; }
+.MarginL5 { margin-left: 5px !important; }
+.comcarname a { color: #2f2f2f; text-decoration: none; font-size: 14px; margin-bottom: 10px; display: block; }
+.commobwrap .select-wrapper { margin: 0px auto; margin-bottom: 5px; float: none; display: block; }
+.commobwrap .select-wrapper, .commobwrap .select-wrapper select { font-size: 13px; }
+.commobwrap .select-wrapper .holder { font-size: 13px; margin: 0 21px 0 0; padding-left: 10px; }
+.commobwrap .compareDivBox { margin: 8px auto 10px; width: 95.5%; }
+.BgGreyf1 { background-color: #f1f1f1 !important; }
+.MarginT10 { margin-top: 10px !important; }
+.commobwrap .carprice { display: inline-block; font-size: 14px; width: 47%; margin-top: 10px; text-align: center; color: #2f2f2f; }
+.W51P { width: 51%; }
+.commobwrap .onroadprice { text-align: center !important; margin-bottom: 10px !important; width: 47% !important; display: inline-block;  }
+.commobwrap .onroadprice span { text-decoration: none; color: #2f2f2f; }
+.comparetab { width: 100%; display: inline-block; }
+.comparetab li { width: 32.9%; float: left; background: #2f2f2f; text-align: center; color: #fff; border-right: 1px solid #fff;  }
+.comparetab li.selected { border-top: solid 2px; background: #fff; }
+.overviewresult { display: inline-block; width: 100%; }
+.respanal { width: 100%; float: left; margin: 10px 0 0 0; }
+.paneltitle { background: #2f2f2f; color: #fff; width: 100%;  font-size: 14px; padding: 10px 0 10px 10px; }
+#tb_second { display: none; }
+.panaldata { border: 1px solid #dedede; border-top: none; width: 100%; padding: 10px 10px; }
+.panaldata td { text-align: center; color: #6d6d6d; font-size: 12px; padding: 3px 0; }
+.panaldata tr:nth-of-type(2n) { background: #e7e7e7; }
+.panaldata td.title {  color: #2f2f2f; font-size: 13px; }
+.commobwrap .crcle { float: none; margin: 5px 2px; }
+#safety_info, #comfort_convenience { display: none; }
+.comparetab li a { color: #fff; display: block; font-size: 12px; width: 100%; text-align: center; line-height: 28px; text-decoration: none; height: 100%; }
+.compare .compareselect .holder { height: auto; background: none; margin-right: 5px; width: 80%; }
+.compcontent li .compareright div:nth-of-type(3n) { padding-right: 10px; }
+.compare-three .select-wrapper, .compare .compareselect .holder{ height:40px; line-height:40px}
+
+/*Accessories*/
+#accdetail { color: #313131;}
+#accdetail .accimgholder { width: 100%; margin: 0 auto; text-align: center; font-family: arial; }
+#accdetail .accimgholder img { width: 100%; height: 299px; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; border: 10px solid #e1e1e1; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+#accdetail .descrip { font-size: 15px; margin-top: 14px; line-height: 1.2; color: #313131; text-align: left; line-height: 25px; }
+#accdetail .outofstock { font-size: 16px;  margin-top: 18px; color: #f0201b; }
+#accdetail .acccont { width: 100%; margin-top: 30px; text-align: center; display: inline-block; }
+#accdetail .acccont p { font-size: 14px; color: #2f2f2f; margin-bottom: 5px; font-family: arial; text-align: left; }
+#accdetail .knowmore { font-size: 14px; margin-top: 42px; font-family: arial; margin-bottom: 10px; }
+#accdetail .acccont .select-button { margin: 10px auto 0; padding: 4px 15px; text-align: center; width: 180px; height: 40px; line-height: 40px !important; display: inline-block; }
+#accdetail .acccont .select-button:hover { color: #fff; }
+.select-wrapper .holder { text-align: left; }
+.accessories button { margin: 0px auto; width: auto; }
+.accessories table .select-button { margin-top: 0; text-align: center; width: 140px; height: 36px; color: #2f2f2f666; font-size: 14px; background: #f1f1f1; border: none; box-sizing: border-box; padding-top: 5px; display: inline-block; float: right; margin-bottom: 10px; line-height: 28px !important; }
+.accessories table .select-button:hover { color: #fff !important; }
+#accdetail .acccont p.acrupes { font-size: 20px; }
+#accdetail .acccont p .pricestax { font-size: 12px; color: #6b7176; margin-left: 10px; }
+#accdetail .acccont p .element { max-width: 320px; word-wrap: break-word; }
+#accdetail .acccont p .acvalue { color: #6b7176; }
+.accespage .selectboxes { text-align: left; margin-bottom: 46px }
+.accespage .select-wrapper {margin-right: 22px; display: block; margin: 0 auto 20px; float: none }
+.accespage .selecttext { font-size: 15px; color: #313131; margin-bottom: 22px }
+.accessories .rwd-table a { color: #2f2f2f666; }
+.accespage .rwd-table .tablebtn{ display:inline-block; text-transform:uppercase}
+/*sitemap page*/
+.sitemap .sitemapheading {  width: 100%;max-width: 280px;border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 7px 0 30px; vertical-align: top; }
+.sitemap .column { margin-right: 20px; max-width: 240px; vertical-align: top; width: 100%; }
+.sitemap .listinghead {  font-size: 16px; padding: 10px 0 15px; line-height: 1.1; }
+.sitemap .sitemapheading a {  display: block; font-size: 14px; padding: 3px 6px; color: #e31837; font-family: arial; }
+.sitemap .sitemapheading a:hover{ color: #535353; }
+.last-site { max-width: 290px; vertical-align: top; width: 100%; }
+/*Career Table*/
+
+.careertable .rwd-table td{ text-align:left; vertical-align:top;}
+.careertable .other span{ margin:0 2% 0 0; display:block}
+.careertable .rwd-table td:first-child{ color:#2f2f2f;}
+.careertable .rwd-table th{ text-align:left;}
+.other{ color:#2f2f2f; margin-top:10px}
+.careertable .other .highlight{ color:#828282; margin-right:10px; display:inline}
+.careertable .rwd-table td a{ text-transform:uppercase; margin-right:10px}
+/*Career Submit*/
+.browsetext{ margin:10px 0}
+/* ========== Finance Page Start ========== */
+
+.pagecard{box-shadow: 0 0 65px rgba(25,25,25,0.09);-webkit-box-shadow: 0 0 65px rgba(25,25,25,0.09); background: #fff;
+position: relative;padding: 20px;}
+.pagecard h1{ text-transform: uppercase; color: #e01b3c;font-weight: bold; margin-bottom: 30px; font-size: 24px; }
+
+.financebg{width: 100%;padding: 20px 0 20px; }
+.financebg h1{color: #e01b3c; font-weight: bold;text-transform: uppercase;}
+.financebg .difstyle {line-height: 1;font-size: 35px;color: #000;}
+.financebg p{ font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 16px; color: #000; padding-top: 10px;}
+.finance_card { box-shadow: 0 0 65px rgba(25,25,25,0.09);-webkit-box-shadow: 0 0 65px rgba(25,25,25,0.09); background: #fff;
+position: relative;padding: 20px; }
+.finance_card h2{text-transform: uppercase;color: #e01b3c;font-weight: bold; margin-bottom: 30px;font-size: 24px;}
+.finance_card .left{border-bottom: 1px solid #dddddd; padding-bottom: 20px; margin-bottom: 20px;}
+.paymentgraph{text-align: center;padding: 20px 0; overflow: hidden; width: 100%; }
+.paymentchart{ max-width: 100%; margin: 0px auto; text-align: center;}
+.paymentchart .button2{ max-width: 200px; }
+.paymentchart li{ font-size: 16px;font-family: "Open Sans", Helvetica, Arial, sans-serif; padding-bottom: 10px;
+    display: inline-block;width: 100%; }
+.totalamount{ font-weight: bold; }
+.paymentchart .val{ float: right; }
+.paymentchart .elemnt i{background: #7C7C7C; width: 10px; height: 10px; display: inline; position: absolute;
+    top: 6px; border-radius: 50%; left: -20px;}
+.paymentchart .elemnt i.red{ background: #E31836; }
+.paymentchart .elemnt{ float: left; position: relative; }
+.finance_secwrap{ background: #D5D5D5 }
+
+.finance_card .exshowroom{ width: 100%; }
+.priceslide{ display: inline-block; width: 100%; }
+.priceslide .title{ font-family: "Open Sans", Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold;display: inline-block;}
+.priceslide .slide1{margin-bottom: 30px;}
+.monthlyemi{background: #EEEEEE;border: solid 1px #ccc; border-radius: 5px;padding: 10px; font-size: 16px;font-family: "Open Sans", Helvetica, Arial, sans-serif;font-weight: bold;}
+.monthlyemi span:last-child{ float: right; }
+.carfinence { float: left; width: 100%; text-align: left; position: relative; margin-top: 50px; }
+.carfinence .success{top: -21px; position: relative;}
+.carfinence h2{text-transform: uppercase;color: #e01b3c;font-weight: bold;margin-bottom: 30px;}
+.b { display: inline-block; color: #000; min-width: 120px; transition: all 0.3s; font-size: 16px; font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    float: right; text-align: right; font-weight: bold;}
+
+.carfinence .main { width: 100%; }
+#self, #salaried{ width:100%; overflow:hidden;}
+.carfinence .left { width: 100%; float: left; animation: none; -webkit-animation: none; -moz-animation: none; -o-animation: none; -ms-animation: none;
+ box-shadow: 0 0 65px rgba(25,25,25,0.09); -webkit-box-shadow: 0 0 65px rgba(25,25,25,0.09); background: #fff; padding: 20px; }
+.contactinform { display: inline-block; width: 100%; margin-bottom: 50px; }
+.contactinformtwo { margin-bottom: 0; }
+.contactinform ul { display: inline-block; }
+.contactinform li { float: left; width: 100%;  position: relative; }
+.carfinence .right { width: 100%; float: left; padding: 20px 0 50px; margin-top: 20px;font-family: "Open Sans", Helvetica, Arial, sans-serif;
+box-shadow: 0 0 65px rgba(25,25,25,0.09); -webkit-box-shadow: 0 0 65px rgba(25,25,25,0.09); background: #fff; padding: 20px;margin-bottom: 40px;}
+.carfinence .comments span { font-style: italic; font-size: 11px; }
+.carfinence .comments { width: 100%; margin-bottom: 0; }
+.carfinence .comments .fields{ width: 100%; }
+.carfinence .comments textarea { height: 150px; resize: none; width: 100%; }
+.carfinence input { width: 100%; }
+.carfinence input { text-transform: none; }
+.carfinence html input[type=button], .carfinence input[type=reset], .carfinence input[type=submit] { cursor: pointer; -webkit-appearance: button; margin: 0px auto; height: 40px; line-height: 1 !important; }
+.carfinence textarea { overflow: auto; vertical-align: top; }
+.carfinence .marginrnone { margin-right: 0px !important; }
+.carfinence .doctabs { float: left; position: relative;border-bottom: solid 1px #ccc; width: 100%; }
+.carfinence .doctabs li { float: left; }
+.carfinence .doctabs li a { font-size: 14px; padding: 10px 6px; float: left; text-align: center; border-right: none;color: #000; box-sizing: border-box;}
+.carfinence .doctabs li a:hover, .carfinence .doctabs li a.active { text-decoration: none; }
+.carfinence .doctabs li a.active,.Phoneno li a:hover{ color: #000; }
+.carfinence .doctabs li a.active {border-bottom: solid 3px #000;}
+.carfinence .doctabresult { float: left; width: 100%; padding: 10px 10px 10px 0; margin-top: -1px; }
+.carfinence .doctabresult li { font-size: 12px; line-height: 1.5; position: relative; padding-bottom: 13px; padding-left: 0; }
+.carfinence .doctabresult li span.sprite {position: relative; background-position: -427px -75px; width: 15px; height: 8px;left: 2px;top: 0px;margin-right: 10px;}
+.carfinence .calcuresult { display: inline-block; width: 100%; position: relative; margin-bottom: 40px; }
+.carfinence .calcuresult h2 { margin-bottom:24px; }
+.carfinence .calcuresult .calleft { width: 100%; float: left; }
+.carfinence .calcuresult .title { font-size:16px; color:#2f2f2f}
+.carfinence .calcuresult .titletagline { font-size: 12px;}
+.carfinence .calcuresult p {font-size: 13px; padding-top: 10px; margin-bottom: 20px;}
+.carfinence .calcuresult form { margin: 20px 0; }
+.carfinence .calcuresult form div { margin-bottom: 10px; }
+.carfinence .emical { width: 265px; float: left;}
+.carfinence .emical .emititle { font-size: 14px; float: left;}
+.carfinence .emical .months { width: 126px; float: left; padding: 7px 0 7px 17px; }
+.carfinence .emical .emis { width: 136px; text-align: left; float: left; padding: 7px 0 7px 23px;}
+.carfinence .emivalues { float: left; width: 265px; font-size: 14px; }
+.carfinence .emivalues .monthvalue { width: 128px; float: left; }
+.carfinence .emivalues .monthvalue li { padding: 6px 0 7px 17px; line-height: 1.2;}
+.carfinence .emivalues .emisvalue { width: 135px; text-align: left; float: left; }
+.carfinence .emivalues .emisvalue li { padding: 6px 0 7px 17px; line-height: 1.2;}
+.carfinence .loanemi { float: left; margin: 0 0 35px; width: 100%; }
+.calcuresult button { float: left; margin-bottom: 0; margin-top: 25px; }
+.carfinence .emivalues li.borderbnone { border-bottom: none; }
+.carfinence .contactinform h3 { font-size: 18px; font-weight: normal; margin:0 0 15px ; text-align: left; }
+
+.fields2 textarea{ margin-bottom:40px}
+/* Popup  otp*/
+.popotp .popuptitle {text-transform: uppercase; font-size: 16px;}
+.otpInputRow {margin: 20px 0px 30px 0px; text-align: center;}
+.popotp .otperr{top: -20px; position: relative; color: red;}
+.popotp .popupinner{ padding-left: 8px; padding-right:8px; }
+.otpInputRow input {width: 40px; height: 40px; border:solid 1px #ccc; margin: 4px; float: none; padding: 0px; text-align: center; }
+.sendBtnRow {text-align: center;}
+.sednOtpRow {text-align: center;padding: 15px; background: #efefef; margin-top: 15px;}
+.resendOtp {color: #e43837; font-size: 15px; letter-spacing: 1px; font-weight: bold; }
+
+
+@media screen and (min-width:359px) {
+/*-----Online Services -------*/
+#online .online_input textarea { width: 100%; box-sizing: border-box; }
+#online .online_area { width: 100%; }
+}
+@media screen and (min-width:479px) {
+/* ========== Finance ==========*/
+.carfinence .doctabs li { width: 30%; }
+.carfinence .doctabs li a { width: 100%; }
+}
+
+@media screen and (min-width:639px) {
+/*Popup Contact No*/
+.phonepop { margin-left: -250px !important; width: 500px !important; position: fixed; }
+.Phoneno { margin: 0 auto; width: 430px; }
+.Phoneno li { text-align: left; }
+.Phoneno ul { border-right: 1px solid #d1d1d1; float: left; margin-right: 30px; width: 190px; }
+.Phoneno ul.bordernone { border-right: none; margin-right: 0px; }
+.popupwrap .pricerowfinal .rightcolumn, .popupwrap .pricerowfinal .rightcolumn .rupee { font-size: 20px; }
+/* event gallery*/
+.eventgallery .owl-buttons, .galleryslider .owl-buttons { bottom: 0; }
+/*sell car*/
+#sell_car .sell_input {margin: 0 20px 2% 0; width: 30%; }
+#sell_car .sell_input:nth-child(3n + 1) {margin-right: 0px;}
+#sell_car .installed_features .sell_input {margin: 0 20px 2% 0; width: 47%;font-family: Arial; }
+#sell_car .installed_features .sell_input:nth-child(2n + 1) {margin-right: 0px;}
+#sell_car .additional_features .sell_input {margin: 0 0px 30px 0; width: 100%; }
+/*-----Online Services -------*/
+
+#online .online_radio.textareaonline { width: 75% }
+/*AccessoriesDetail*/
+#accdetail .accimgholder { width: 489px }
+/*sitemap page*/
+.sitemap .column { display: inline-block; }
+
+/*Career*/
+.careertable .other span{ display:inline}
+.submitresumepag .success{ padding-bottom: 20px; }
+}
+@media screen and (min-width:767px) {
+    /*popup otp*/
+.otpInputRow input {width: 60px; height: 50px;}
+.popotp .popuptitle {padding: 25px 35px 15px 35px; font-size: 22px;}
+.popotp .otperr{text-align: center; width: 100%;}
+
+.innerpage {padding: 0 20px 0;}
+/*--contact Page---*/
+.contact form { margin: 0; text-align: left; width: 720px; }
+.contact .leftsec { float: left; margin-right: 20px; width: 370px; }
+.contact .rightsec { float: left; width: 330px; }
+.contact .contactdetail .fields { float: left; }
+.contactdetail .fields2 { float: left; width: 100%; }
+.contactdetail .fields2 textarea { width: 100%; padding-top: 10px; margin-bottom: 40px; }
+.contactdetail .fields3 { float: left; width: 330px; }
+.contactdetail .fields3 .select-wrapper select { float: left; width: 330px; }
+
+.accessoriesQuest .contact form{width: 100%}
+.accessoriesQuest .contact .leftsec{ width: 100%; margin-right: 0px; }
+.accessoriesQuest .contact .contactdetail .fields{ width: 270px; margin-right: 20px;}
+.accessoriesQuest .contactdetail .fields2 textarea{ margin-bottom: 0px; }
+
+/* Popup Css */
+.popupwrap { left: 50%; width: 600px; top: 55px; margin: 0 0 0 -297px; position: fixed; }
+.popupwrap .popuptitle { font-size:19px;margin-bottom: 0;  padding-left: 20px; }
+.popupwrap .inputvalue { margin: 0 20px 30px 0; }
+.withimgpopup .popupinner{ padding-bottom: 0 !important; }
+.popupwrap .select-wrapper, .popupwrap .select-wrapper select, .popupwrap .inputvalue { width: 250px; }
+.withimgpopup .select-wrapper, .withimgpopup .select-wrapper select, .withimgpopup .inputvalue { width: 100%; }
+
+.popupwrap .popupinner { padding: 10px 20px 20px; }
+.selldetail .popupinner, .onroadprice .popupinner { padding-bottom: 37px; }
+.popupwrap .fields {width: 47%; margin-right: 3%;}
+.popupwrap.withimgpopup .fields{ width:100%; margin-right:0px;}
+.popupwrap .marginrnone { margin-right: 0px; }
+.popupwrap .selectcar, .popupwrap .selectcar .select-wrapper, .popupwrap .selectcar .select-wrapper select { width: 100%; }
+.popupwrap .fullwidth { width: 100%; }
+.popupwrap .leftcolumn { width: 228px; padding: 0 0 0 15px; font-size: 14px; box-sizing: border-box; }
+.popupwrap .rightcolumn { margin-left: 59px; width: 217px; font-size: 18px; }
+.popupwrap .manda { float: left; text-align: center;width: 100%; }
+/*-----Popup-Offer-----*/
+.offerpopup .saveupto { text-align: left; font-size: 23px; line-height: 1; }
+.offerpopup .offerimg { width: 233px; text-align: left; }
+.offerpopup .description { float: left; margin-left: 30px; }
+.offerpopup p { padding-bottom: 0; }
+/*Thank You Popup */
+.aboutcarimg, .testinonialcarimg { display: block; position: absolute; bottom: 0; }
+.aboutcarimg { right: 0; }
+.testinonialcarimg { left: 0; }
+.aboutcarimg img { display: block; width: 60%; float: right; }
+.testinonialcarimg img { display: block; width: 60%; float: left; }
+.testimonial .content-sec { padding-bottom: 100px; }
+/*Popup Get on road price*/
+.popupwrap .selectcar .select-wrapper { background-position: 95% 50%; }
+.getonroad .titlepopup { padding-top: 0; }
+.getonroad .marbottom { margin-bottom: 15px; }
+/*popup-Book a test drive*/
+.getonroad .popupbutton, .popbooktestdrive .popupbutton {  text-align: center;  }
+/*Popup Contact*/
+.phonepop { top: 30%; }
+/*-----Online Services -------*/
+#online .online_input textarea { height: 130px; }
+
+.online_radio.mode_input label[for="others"] {width:auto !important}
+
+/*accessories */
+.accespage {  padding: 0 30px; padding: 0; }
+.accespage .select-wrapper { float: left; margin: 0 10px 20px auto; width: 222px; }
+
+.contactdetail { width: 100%; text-align: left }
+.bookservicemain .contactdetail .fields { width: 305px; margin-right: 20px; }
+
+.bookservicemain .contactdetail textarea { width: 564px; float: left; margin-right: 39px; height: 100px }
+/*Career Submit Resume*/
+.submitresume .fields2{ margin-right:20px; display:inline-block}
+/* ========== Finance CSS ========== */
+.financewrap{ padding-top: 0px !important; }
+.carfinence .financetab li a { font-size: 13px; padding: 6px 24px; }
+.carfinence .doctabresult li { float: left; font-size: 12px; margin-left: 10px; margin-right: 10px; width: 100%; }
+.carfinence .calcuresult form { float: left; margin: 20px 43px 0 0; width: 221px; }
+.contactinform li { width: 244px; margin-right: 18px; }
+.carfinence .comments { width: 502px; }
+.carfinence .left { margin: 0px auto; width: 72%; float: none;z-index: 99;position: relative; }
+.carfinence .right { float: none; margin: 0px auto; width: 70%; }
+.financebg{ background: url(../image/financebg.jpg);background-repeat: no-repeat;background-size: cover; height: 338px; padding-bottom: 50px; }
+.financebg h1{ font-size: 53px; }
+.financebg .difstyle {font-size: 68px;color: #fff;}
+.financebg p{ color: #fff; }
+.finance_card { top: -50px;}
+.finance_card .left{ width: 58%; display: inline-block; vertical-align: top;     border-right: 1px solid #dddddd; padding-right: 20px;
+margin-right: 20px;}
+.finance_card .right{ width: 39%; display: inline-block;vertical-align: top; }
+.finance_card h2{font-size: 26px;}
+.paymentchart{ width:95%}
+
+}
+
+
+ @media screen and (min-width:767px) and (max-width:1006px) {
+/*Site Map Page*/
+.last-site { max-width: 700px !important; width: 100% !important; }
+.sitemap .sitemapheading { display: inline-block; text-align: left; }
+.sitemap { text-align: center; }
+}
+@media screen and (min-width:960px) {
+	/*Accessoreis Detail*/
+#accdetail .accimgholder { float: left; margin: 0; text-align: left }
+#accdetail .acccont { width: 420px; margin: 0 0 0 45px; float: left; text-align: left; }
+
+#sell_car .col6 {width: 48%;}
+}
+@media screen and (min-width:1007px) {
+
+.popupwrap .popupcontain { max-height: none;overflow: unset; }
+
+
+	#custom-form .fields{ width: 45%;  }
+.pagecard h1{ font-size: 26px; }
+.breadcrumbs .main { position: relative; width: 580px; margin: unset; z-index: 999; padding-left: 115px;}
+
+.withimgpopup{ width: 760px;  margin-left: -380px;}
+.withimgpopup .popupleftImg{display: block; width: 380px; float: left; height: 526px; }
+.withimgpopup .popupleftImg img{max-width: none; width: auto;height: 534px;}
+.withimgpopup .popupright{ display: table-cell; width: 375px; vertical-align: top; float: left;}
+
+.innerpage {padding:0;padding-bottom: 70px;}
+
+.popwrp {  margin-top: 110px; }
+/*Insurance*/
+.insurancewrap { text-align: left }
+.insurancewrap .tabbutton li { width: 160px }
+.insurancewrap .select-button { font-size: 16px }
+.insurancewrap .select-button { font-size: 16px }
+/*Insurance*/
+.insurancedetail h2 {font-size: 27px; }
+/*--- Sell Car ---*/
+#sell_car { text-align: left; padding: 0 9px; }
+#sell_car .select-button { float: left; }
+#sell_car .additional_features > label { max-width: 306px; }
+#sell_car .additional_features > label:nth-of-type(3n) { margin-right: 0; }
+/*#sell_car .left_select, #sell_car .right_select { max-width: 458px; }
+#sell_car .left_select { margin-right: 45px; }
+#sell_car .right_select { padding-right: 0; }*/
+#sell_car h2 { text-align: left; }
+/*online service*/
+#online .online_area, #online .online_radio .remark { width: 94%; }
+#online .online_radio { width: 64%; }
+
+/*Compare*/
+.compare-desktopview { display: block; padding: 0 7px; }
+.compare-mobview { display: none; }
+/*Accessoris*/
+.accespage .select-wrapper { width: 280px;  margin: 0 20px 0 0 }
+.accespage .selecttext { text-align: left }
+.accessories button, #accdetail .acccont .select-button { float: left; }
+#accdetail { margin: 0; }
+
+/* ========== Finance CSS  ========== */
+.carfinence .left { margin-right: 4px; width: 512px; float: left; }
+.carfinence .right { margin-left: 0; margin-top: 0; width: 426px; float: left;
+position: relative;top: 45px;left: -22px;padding-left: 40px; }
+@media screen and (min-width:1179px) {	
+.sitemap .column {max-width:270px; }
+/*Book*/
+
+/* ========== Finance CSS  ========== */
+.carfinence .right {width: 546px;}
+}
+}
+@media screen and (min-width:1200px) {
+ /*---Sell Car--*/
+#online .online_area, #online .online_radio .remark { width: 100%; }
+/*#sell_car .installed_features .sell_input { width: 175px; }
+
+#sell_car .car_details .sell_input { margin: 0 17px 30px 0; }
+#sell_car .left_select { margin-right: 22px; }*/
+#sell_car .sell_input p { font-size: 14px; padding: 9px 0 0; }
+#sell_car .additional_features > label { margin: 0 17px 28px 0; max-width: 365px; }
+/*#sell_car .sell_input { margin: 0 17px 25px 0; width: 275px; }*/
+.submit_sell_car {text-align: center;}
+#sell_car .sell_input {width: 32%; }
+
+ }
+@media screen and (min-width:1260px) {
+/*Insurance Page*/	  
+.insurancewrap .fields, .insurancewrap .fields2 { width: 253px; }
+/*sell car*/
+/*#sell_car .left_select, #sell_car .right_select { max-width: 546px; }*/
+#sell_car .additional_features > label { max-width: 373px; }
+/*-----Online Services -------*/
+#online .purpose, #online .personal, #online .contact {float:left; }
+#online .purpose .fields {width: 31%;}
+#online .online_radio.textareaonline{ width: 75%; }
+#online .online_radio { width: 555px; box-sizing: border-box; margin-bottom: 25px; }
+#online .online_area { width: 100%; }
+
+#online .contact .fields{ width: 75%; }
+
+#online .personal .fields { width: 31%;}
+
+
+.floatleft .online_input { margin: 0 0 35px !important; width: 277px; }
+#online .other { font-size: 14px !important; margin: 20px 0 0 10px !important; }
+#online .online_radio .remark { height: 106px; width:90%; box-sizing: border-box; }
+#online .floatright { padding-left: 35px; }
+.online_radio.mode_input label[for="others"] { margin-top:0px !important;clear: none;}
+
+/*Compare*/
+.compare .main { padding: 0; }
+.compare-desktopview { padding: 0; }
+.compare-three { width: 905px; }
+.compare-three .col-1 { margin-left: 21px; width: 280px; }
+.comwrap .combox .comcol { margin-left: 21px; width: 230px; }
+.comwrap .compareselect { width: 238px; }
+.compcontent li .compareleft { width: 27%; }
+.compcontent li .compareright div { width: 280px; }
+.compare.container { width: 1124px; }
+/*Book service*/
+
+/*Submit Resume*/
+.submitresume .fields2{ width:583px; }
+/* ========== Finance CSS ========== */
+.carfinence { padding: 0 0px 20px; margin: 0px auto; float: none; display: inline-block;  margin-top: 50px;}
+.carfinence .left { width: 537px;}
+.carfinence .right { width: 618px; }
+.carfinence .left article { padding-right: 48px; }
+.carfinence .contactinformtwo { margin-top: 19px; }
+.carfinence .calcuresult .calleft { margin-right: 40px; width: 305px; }
+.carfinence .doctabresult { padding: 30px 10px 10px;}
+.carfinence .calcuresult { margin-top: 0; margin-bottom:76px; }
+.carfinence .doctabresult li { font-size: 14px; margin-right: 15px; }
+.calcuresult button { margin-top: -4px; }
+.carfinence .emical { position: relative;}
+}
