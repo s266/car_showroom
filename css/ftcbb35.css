@@ -1,0 +1,13 @@
+.ftcfullscreenbtn {
+    margin: 20px auto;
+    width: auto;
+    background: no-repeat;
+    border: solid 1px #ccc;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ftcfullscreenbtn:hover{background: #000; border-color: #000;color: #fff;}
