@@ -1,0 +1,290 @@
+/** /!!! core css Should not edit !!!/**/
+.gscr_slideOuter {
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.gscr_carousel:before, .gscr_carousel:after {
+    content: " ";
+    display: table;
+}
+
+.gscr_carousel, .gscr_pagerwrapper {
+    overflow: hidden;
+    margin: 0;
+}
+
+.gscr_slideWrapper, .gscr_outerwrapper {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.gscr_outerwrapper{
+    overflow: visible;
+}
+.gscr_slideWrapper > .gscr_carousel:after {
+    clear: both;
+}
+
+.gscr_slideWrapper .gscr_slide {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    -webkit-transition: all 1s;
+    -webkit-transition-property: -webkit-transform, height;
+    -moz-transition-property: -moz-transform, height;
+    transition-property: transform, height;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important;
+}
+
+.gscr_slideWrapper .gscr_lSFade {
+    position: relative;
+}
+
+.gscr_slideWrapper .gscr_lSFade > * {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    margin-right: 0;
+    width: 100%;
+}
+
+.gscr_slideWrapper.gscr_usingCss .gscr_lSFade > * {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transition-duration: inherit !important;
+    transition-duration: inherit !important;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-timing-function: inherit !important;
+    transition-timing-function: inherit !important;
+}
+
+.gscr_slideWrapper .gscr_lSFade > *.gscr_active {
+    z-index: 10;
+}
+
+.gscr_slideWrapper.gscr_usingCss .gscr_lSFade > *.gscr_active {
+    opacity: 1;
+}
+
+/** /!!! End of core css Should not edit !!!/**/
+
+/* Pager */
+.gscr_slideOuter .gscr_lSPager.gscr_lSpg {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSpg > li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSpg > li a {
+    background-color: #222222;
+    border-radius: 30px;
+    display: inline-block;
+    height: 8px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 8px;
+    position: relative;
+    z-index: 99;
+    -webkit-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSpg > li:hover a, .gscr_slideOuter .gscr_lSPager.gscr_lSpg > li.gscr_active a {
+    background-color: #428bca;
+}
+
+.gscr_slideOuter .gscr_media {
+    opacity: 0.8;
+}
+
+.gscr_slideOuter .gscr_media.gscr_active {
+    opacity: 1;
+}
+
+/* End of pager */
+
+/** Gallery */
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery {
+    list-style: none outside none;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -ms-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate3d(0px, 0px, 0px);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery li {
+    overflow: hidden;
+    -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+    transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery li.gscr_active, .gscr_slideOuter .gscr_lSPager.gscr_lSGallery li:hover {
+    border-radius: 5px;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery:before, .gscr_slideOuter .gscr_lSPager.gscr_lSGallery:after {
+    content: " ";
+    display: table;
+}
+
+.gscr_slideOuter .gscr_lSPager.gscr_lSGallery:after {
+    clear: both;
+}
+
+/* End of Gallery*/
+
+/* slider actions */
+.gscr_lSAction > a {
+    width: 32px;
+    display: block;
+    top: 50%;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    margin-top: -16px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.35s linear 0s;
+    transition: opacity 0.35s linear 0s;
+}
+
+.gscr_lSAction > a:hover {
+    opacity: 1;
+}
+
+.gscr_lSAction > .gscr_lSPrev {
+    background-position: 0 0;
+    left: 10px;
+}
+
+.gscr_lSAction > .gscr_lSNext {
+    background-position: -32px 0;
+    right: 10px;
+}
+
+.gscr_lSAction > a.gscr_disabled {
+    pointer-events: none;
+}
+
+.gscr_cS-hidden {
+    height: 1px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    overflow: hidden;
+}
+
+.gscr_slideOuter .gscr_carousel, .gscr_slideOuter .gscr_lSPager {
+    padding-left: 0;
+    list-style: none outside none;
+}
+
+.gscr_slideOuter .gscr_carousel > *, .gscr_slideOuter .gscr_lSGallery li {
+    float: left;
+}
+
+.gscr_slideOuter .gscr_rightEnd {
+    -webkit-animation: rightEnd 0.3s;
+    animation: rightEnd 0.3s;
+    position: relative;
+}
+
+.gscr_slideOuter .gscr_leftEnd {
+    -webkit-animation: leftEnd 0.3s;
+    animation: leftEnd 0.3s;
+    position: relative;
+}
+
+/*/  GRab cursor */
+.gscr_carousel.gscr_lsGrab > * {
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
+}
+
+.gscr_carousel.gscr_lsGrabbing > * {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: -moz-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing;
+}
+
+.gscr_carousel img {
+    width: 100%;
+    display: inline-block;
+}
+
+.gscr_html_pager {
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gscr_waterwheel_carousel{
+    padding: 70px 0;
+}
+
+/*.gscr_waterwheel_carousel > li {
+    -webkit-transition: scale 1s ease;
+    -moz-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    transition: transform 1s ease;
+}*/
+
+.gscr_waterwheel_carousel img {
+    width: 100%;
+    display: inline-block;
+    /*opacity: 0;*/
+    transition: opacity 400ms ease;
+    box-shadow: 0 0 10px #000;
+}
+.gscr_counter{
+    position: absolute;
+    left:0;
+    background-color:#333;
+    color:#FFF;
+    padding:5px;
+    border-radius:0 0 2px 3px;
+}
+.gscr_lsDragging{
+    pointer-events: none;
+}
